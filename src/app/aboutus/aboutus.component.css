@@ -1,0 +1,11 @@
+
+.card-header{
+    text-align: center;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 1500px;
+    height: 500px;
+    margin: auto;
+}

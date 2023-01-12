@@ -1,0 +1,13 @@
+.card{
+    
+    height:300px;
+    width:300px;
+
+}
+.bg-image {
+    background-image: url("src/assets/images/veg3.jpg");
+    height: 100vh;
+  }
+.container{
+    padding-top: 50px;
+}

@@ -1,0 +1,32 @@
+<div class="col-lg-6 mb-5 mb-lg-0">
+<div class="card">
+<div class="card-body py-5 px-md-5">
+<form [formGroup]="loginForm" (ngsubmit)="onSubmit()">
+    <div class="form-group">
+    <p>
+    <mat-form-field >
+        <mat-label>UserName</mat-label>
+        <input class="form-control" matInput type="text" name="username" id="username" placeholder="Enter the Username" formControlName="username" required/>
+        <mat-error *ngIf="myError('username', 'required')">
+            Username is required
+        </mat-error>
+        
+    </mat-form-field>
+   </p>
+   <p>
+    <mat-form-field >
+        <mat-label>Password</mat-label>
+        <input class="form-control" matInput type="text" name="password" id="password" placeholder="Enter your password" formControlName="password" required/>
+        <mat-error *ngIf="myError('password', 'required')">
+            Password is required
+        </mat-error>
+    </mat-form-field>
+    </p>
+    <p>
+        <button mat-raised-button color="primary" type="submit" [disabled]="!loginForm.valid">Login</button>
+    </p>
+</div>
+</form>
+</div>
+</div>
+</div>
