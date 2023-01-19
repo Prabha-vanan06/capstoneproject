@@ -1,0 +1,15 @@
+
+.headings{
+  text-align: center;
+  
+}
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 40%;
+    
+}
+.navbar-nav.navbar-right{
+    position: absolute;
+    left: 92%;
+    
+}
